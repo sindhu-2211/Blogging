@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnLusher - Published Articles</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            min-height: 100vh;
+            color:black;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            width: 100%;
+        }
+
+        .logo img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .header-links {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+        }
+
+        .header-links a {
+            color: #fff;
+            margin-right: 20px;
+            text-decoration: none;
+        }
+
+        .article-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .article {
+            width: 60%;
+            background-color: #fff;
+            border-radius: 15px;
+            margin: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            box-sizing: border-box;
+            transition: transform 0.3s;
+        }
+
+        .article:hover {
+            transform: scale(1.05);
+        }
+
+        .article-title {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .article-date {
+            color: #777;
+        }
+
+        footer {
+            background-color: #000;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="Rose Gold Luxury Initial Circle Logo.png" alt="Your Logo">
+        </div>
+        <div class="header-links">
+            <a href="sample.html" style="text-decoration: none;">Write</a>
+            <a href="like.html" style="text-decoration: none;">Like</a>
+            
+        </div>
+    </header>
+
+    <div class="article-list" id="articleList">
+        <!-- Articles will be dynamically added here using JavaScript -->
+    </div>
+
+    <footer>
+        <p>&copy; 2023 LearnLush. All rights reserved.</p>
+        <p>Contact: (+91) 9347120448, (+91) 9849130314</p>
+        <p>Created by: Renuka and Sindhu Priya</p>
+    </footer>
+
+    <script>
+        async function displayUserPublishedArticles() {
+            const articleList = document.getElementById('articleList');
+    
+            try {
+                // Fetch user-published articles from the server
+                const response = await fetch('server.php');
+                const userPublishedArticles = await response.json();
+    
+                userPublishedArticles.forEach(article => {
+                    const articleDiv = document.createElement('div');
+                    articleDiv.classList.add('article');
+    
+                    const articleTitle = document.createElement('div');
+                    articleTitle.classList.add('article-title');
+                    articleTitle.textContent = article.title;
+    
+                    const articleDate = document.createElement('div');
+                    articleDate.classList.add('article-date');
+                    articleDate.textContent = article.publication_date;
+    
+                    articleDiv.appendChild(articleTitle);
+                    articleDiv.appendChild(articleDate);
+    
+                    articleList.appendChild(articleDiv);
+                });
+            } catch (error) {
+                console.error('Error fetching user-published articles:', error);
+            }
+        }
+    
+        // Call the function to display user-published articles
+        displayUserPublishedArticles();
+    </script>
+</body>
+</html>

@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LearnLush-Home</title>
+    </head>
+<style>
+
+        .body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.background-image { /* Set your desired height */
+    background-size:cover;
+}
+
+/* Rest of your styles... */
+
+        .blog-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        background-color: #333;
+        color: #fff;
+        width: 100%;
+    }
+
+    .logo img {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+   
+
+    .header-links {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+    }
+   
+
+    .header-links a {
+        color: #fff;
+        margin-right: 20px;
+        text-decoration: none;
+    }
+
+    .user-profile {
+        display: flex;
+        align-items: center;
+        color: #fff;
+        margin-right: 10px;
+    }
+
+    #userAccount {
+        margin-right: 10px;
+    }
+
+    #accountDropdown {
+        color: #fff;
+    }
+
+    .blog-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+
+    .blog-card {
+        width: 300px;
+        background-color: #fff;
+        border-radius: 15px;
+        margin: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.3s;
+    }
+
+    .blog-card:hover {
+        transform: scale(1.05);
+    }
+
+    .preview-image-wrapper {
+        overflow: hidden;
+    }
+
+    .preview-image-component {
+        width: 100%;
+        height: 150px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .content-wrapper {
+        padding: 15px;
+    }
+
+    .title-wrapper {
+        margin-bottom: 10px;
+    }
+
+    .pub-title {
+        font-size: 1.2em;
+        margin: 0;
+    }
+
+    .authors {
+        font-size: 0.9em;
+        color: #555;
+    }
+
+    .description {
+        margin-top: 10px;
+        color: #777;
+    }
+    .like-button button {
+    background-color: blue; /* Green background */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.like-button button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+    .dropdown-content {
+    width: 130px; /* Adjust the width as needed */
+    position: absolute;
+    display:none;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-content li {
+    padding: 10px;
+}
+
+.dropdown-content a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+footer {
+            background-color: #000;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+        }
+
+</style>
+
+<body>
+    <header class="header">
+        <div class="logo">
+  
+            <img src="Rose Gold Luxury Initial Circle Logo.png" alt="Your Logo">
+        </div>
+        
+        <div class="header-links">
+            <a href="sample.html" style="text-decoration: none;">Write</a>
+            <a href="like.html" style="text-decoration: none;">Like</a>
+            <div class="dropdown">
+                <button class="user-icon" onclick="toggleDropdown()">LearnLusher</button>
+                <ul class="dropdown-content" id="dropdownContent">
+                    <li><a href="server.php">Articles Published</a></li>
+                    <li><a href="change-password.html">Change Password</a></li>
+                    <li><a href="logout.html">Logout</a></li>
+                </ul>
+           </div>
+        </div>
+    </header>
+    <img class="background-image">
+
+    <div class="blog-cards">
+        <!-- Blog Card 1 -->
+        <div class="blog-card">
+            <div class="preview-image-wrapper">
+                <a href="https://www.discoverdatascience.org/articles/data-science-focus-areas/" title="Data Science Focus Areas">
+                    <div class="preview-image-component"
+                        style="background-image:url('https://www.discoverdatascience.org/wp-content/uploads/2023/01/data-science-focus-areas.jpg')"></div>
+                </a>
+            </div>
+            <div class="content-wrapper">
+                <div class="content">
+                    <div class="title-wrapper">
+                        <a href="https://www.discoverdatascience.org/articles/data-science-focus-areas/" title="Data Science Focus Areas">
+                            <h3 class="pub-title">
+                                <span>Data Science Focus Areas</span>
+                            </h3>
+                        </a>
+                    </div>
+                    <div class="description">
+                        <span>
+                            Explore the dynamic landscape of data science as we delve into specialized focus areas, unveiling the
+                            key to extracting actionable insights in this ever-evolving field.
+                        </span>
+                    </div>
+                    <div class="like-button">
+                        <button onclick="likeArticle(1)">Like</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Blog Card 2 -->
+        <div class="blog-card">
+            <div class="preview-image-wrapper">
+                <a href="https://www.analyticsvidhya.com/blog/2020/04/feature-scaling-machine-learning-normalization-standardization/?utm_source=blog&utm_medium=top_10_articles_published_in_2020"
+                    title="Feature Scaling for Machine Learning: Understanding the Difference Between Normalization vs. Standardization">
+                    <div class="preview-image-component"
+                        style="background-image:url('https://pianalytix.com/wp-content/uploads/2020/12/Feature-Scaling-In-Machine-Learning.jpg')"></div>
+                </a>
+            </div>
+            <div class="content-wrapper">
+                <div class="content">
+                    <div class="title-wrapper">
+                        <a href="https://www.analyticsvidhya.com/blog/2020/04/feature-scaling-machine-learning-normalization-standardization/?utm_source=blog&utm_medium=top_10_articles_published_in_2020"
+                            title="Feature Scaling for Machine Learning: Understanding the Difference Between Normalization vs. Standardization">
+                            <h3 class="pub-title">
+                                <span>Feature Scaling for Machine Learning: Understanding the Difference Between
+                                    Normalization vs. Standardization</span>
+                            </h3>
+                        </a>
+                    </div>
+                    
+                    <div class="description">
+                        <span>
+                            Feature scaling helps you convert various variables having myriad units of measurement such as
+                            kilogram, Rupees, Years, etc into unitless measures. But the question is which method of Scaling to
+                            use?
+                        </span>
+                    </div>
+                    <div class="like-button">
+                        <button onclick="likeArticle(2)">Like</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Blog Card 3 -->
+        <div class="blog-card">
+            <div class="preview-image-wrapper">
+                <a href="https://hdsr.mitpress.mit.edu/pub/nw5bilq7"
+                    title="Human Intelligence, Artificial Intelligence, and Homo sapiens Intelligence?">
+                    <div class="preview-image-component"
+                        style="background-image:url('https://resize-v3.pubpub.org/eyJidWNrZXQiOiJhc3NldHMucHVicHViLm9yZyIsImtleSI6IndidWE5aW56LzUuNCBNZW5nIChlZGl0b3JpYWwpIHByZXZpZXcgaW1hZ2UtNDE2OTc4MDc3NTI0NjkucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo4MDAsImZpdCI6Imluc2lkZSIsIndpdGhvdXRFbmxhcmdlbWVudCI6dHJ1ZX19fQ==')"></div>
+                </a>
+            </div>
+            <div class="content-wrapper">
+                <div class="content">
+                    <div class="title-wrapper">
+                        <a href="https://hdsr.mitpress.mit.edu/pub/nw5bilq7"
+                            title="Human Intelligence, Artificial Intelligence, and Homo sapiens Intelligence?">
+                            <h3 class="pub-title">
+                                <span>Human Intelligence, Artificial Intelligence, and Homo sapiens Intelligence?</span>
+                            </h3>
+                        </a>
+                    </div>
+                    
+                    <div class="description">
+                        <span>
+                            What is ‘intelligence’? Is ‘Homo sapiens intelligence’ a thing? How do HI (human intelligence), AI
+                            (artificial intelligence), and HSI (Homo sapiens intelligence) interact, assuming each 'I' is as certain
+                            as 'I think; therefore, I am'?
+                        </span>
+                    </div>
+                    <div class="like-button">
+                        <button onclick="likeArticle(3)">Like</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Blog Card 4 -->
+        <div class="blog-card">
+            <div class="preview-image-wrapper">
+                <a href="https://www.discoverdatascience.org/articles/java-vs-javascript/" title="Java Vs. Javascript">
+                    <div class="preview-image-component"
+                        style="background-image:url('https://tse2.mm.bing.net/th?id=OIP.ghWwOfaRnwM-ut2WWL8zJQHaD4&pid=Api&P=0&h=180')"></div>
+                </a>
+            </div>
+            <div class="content-wrapper">
+                <div class="content">
+                    <div class="title-wrapper">
+                        <a href="https://www.discoverdatascience.org/articles/java-vs-javascript/" title="Java Vs. Javascript">
+                            <h3 class="pub-title">
+                                <span>Java Vs. Javascript</span>
+                            </h3>
+                        </a>
+                    </div>
+                    
+                    <div class="description">
+                        <span>
+                            Java and JavaScript may share a name, but they dance to different tunes in the tech world.
+                        </span>
+                    </div>
+                    <div class="like-button">
+                        <button onclick="likeArticle(4)">Like</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Blog Card 5 -->
+        <div class="blog-card">
+            <div class="preview-image-wrapper">
+                <a href="https://www.ibm.com/topics/data-science" title="What is data science?">
+                    <div class="preview-image-component"
+                        style="background-image:url('https://www.ibm.com/content/dam/connectedassets-adobe-cms/worldwide-content/creative-assets/s-migr/ul/g/38/75/maas360-ai-analytics-aem-leadspace.component.m.ts=1698174151303.png/content/adobe-cms/us/en/topics/data-science/jcr:content/root/leadspace')"></div>
+                </a>
+            </div>
+            <div class="content-wrapper">
+                <div class="content">
+                    <div class="title-wrapper">
+                        <a href="https://www.ibm.com/topics/data-science" title="What is data science?">
+                            <h3 class="pub-title">
+                                <span>What is data science?</span>
+                            </h3>
+                        </a>
+                    </div>
+                    <div class="description">
+                        <span>
+                            The accelerating volume of data sources, and subsequently data, has made data science is one of the
+                            fastest growing field across every industry. As a result, it is no surprise that the role of the data
+                            scientist was dubbed the “sexiest job of the 21st century” by Harvard Business Review.
+                        </span>
+                    </div>
+                    <div class="like-button">
+                        <button onclick="likeArticle(5)">Like</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Blog Card 6 -->
+<div class="blog-card">
+    <div class="preview-image-wrapper">
+        <a href="https://365datascience.com/trending/the-evolution-of-chatgpt-history-and-future/" title="The Evolution of ChatGPT: History and Future">
+            <div class="preview-image-component" style="background-image:url('https://cdn.searchenginejournal.com/wp-content/uploads/2023/01/chatgpt-63bd35348fd76-sej.png')"></div>
+        </a>
+    </div>
+    <div class="content-wrapper">
+        <div class="content">
+            <div class="title-wrapper">
+                <a href="https://365datascience.com/trending/the-evolution-of-chatgpt-history-and-future/" title="The Evolution of ChatGPT: History and Future">
+                    <h3 class="pub-title">
+                        <span>The Evolution of ChatGPT: History and Future</span>
+                    </h3>
+                </a>
+            </div>
+
+            <div class="description">
+                <span>
+                    ChatGPT isn’t the first language model; it isn’t even the first GPT model. But it made a significant leap in natural language processing—popularizing large language models and accelerating the adoption of AI.
+                </span>
+            </div>
+            <div class="like-button">
+                <button onclick="likeArticle(6)">Like</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Blog Card 7 -->
+<div class="blog-card">
+    <div class="preview-image-wrapper">
+        <a href="https://pytorch.org/blog/effective-multi-objective-nueral-architecture/" title="Efficient Multi-Objective Neural Architecture Search with Ax">
+            <div class="preview-image-component" style="background-image:url('https://www.researchgate.net/profile/Harjot-Kaur-18/publication/335680054/figure/fig1/AS:800519618568193@1567870158573/Multi-Layer-Neural-Network-Architecture.png')"></div>
+        </a>
+    </div>
+    <div class="content-wrapper">
+        <div class="content">
+            <div class="title-wrapper">
+                <a href="https://pytorch.org/blog/effective-multi-objective-nueral-architecture/" title="Efficient Multi-Objective Neural Architecture Search with Ax">
+                    <h3 class="pub-title">
+                        <span>Efficient Multi-Objective Neural Architecture Search with Ax</span>
+                    </h3>
+                </a>
+            </div>
+            <div class="description">
+                <span>
+                    Multi-Objective Optimization in Ax enables efficient exploration of tradeoffs (e.g. between model performance and model size or latency) in Neural Architecture Search.
+                </span>
+            </div>
+            <div class="like-button">
+                <button onclick="likeArticle(7)">Like</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Blog Card 8 -->
+<div class="blog-card">
+    <div class="preview-image-wrapper">
+        <a href="https://www.datacamp.com/blog/an-introduction-to-duckdb-what-is-it-and-why-should-you-use-it" title="An Introduction to DuckDB: What is It and Why Should You Use It?">
+            <div class="preview-image-component" style="background-image:url('https://duckdb.org/images/logo-dl/DuckDB_Logo.jpg')"></div>
+        </a>
+    </div>
+    <div class="content-wrapper">
+        <div class="content">
+            <div class="title-wrapper">
+                <a href="https://www.datacamp.com/blog/an-introduction-to-duckdb-what-is-it-and-why-should-you-use-it" title="An Introduction to DuckDB: What is It and Why Should You Use It?">
+                    <h3 class="pub-title">
+                        <span>An Introduction to DuckDB: What is It and Why Should You Use It?</span>
+                    </h3>
+                </a>
+            </div>
+            <div class="description">
+                <span>
+                    Explore DuckDB, the fast, easy-to-use analytics database for Python and R. Learn its key features, use cases, and how it optimizes data analysis tasks.
+                </span>
+            </div>
+            <div class="like-button">
+                <button onclick="likeArticle(8)">Like</button>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <p>&copy; 2023 LearnLush. All rights reserved.</p>
+    <p>Contact: (+91) 9347120448, (+91) 9849130314</p>
+    <p>Created by: Renuka and Sindhu Priya</p>
+</footer>
+</body>
+<script>
+    function likeArticle(articleId) {
+        // Get the article title or other information based on the articleId
+        var articleTitle = document.querySelector('.blog-card:nth-child(' + articleId + ') .pub-title span').innerText;
+
+        // Create a new element to represent the liked article
+        var likedArticle = document.createElement('div');
+        likedArticle.innerHTML = '<span>' + articleTitle + '</span>';
+
+        // Append the liked article to the like.html page
+        document.getElementById('liked-articles').appendChild(likedArticle);
+    }
+
+    
+</script>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Welcome to LearnLush</title>
+    <style>
+        /* Add your styling for the welcome page here */
+        body {
+            font-family: Arial, sans-serif;
+            background: url("backgroundImage.jpeg") center/cover no-repeat; /* Set welcome image as background */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 50px; /* Set the height for the header */
+            background-color: #333;
+            color: #fff;
+            width: 100%;
+        }
+
+        .logo img {
+            width: 70px;
+            height: 70px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .welcome-content {
+            background-color: rgba(255, 255, 255, 0.8); /* Set background color for content */
+            padding: 20px;
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
+            border-radius: 15px; /* Add rounded corners */
+        }
+
+        footer {
+            background-color: #000;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .button-container button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 45%;
+        }
+
+        .button-container button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="Rose Gold Luxury Initial Circle Logo.png" alt="LearnLush Logo">
+        </div>
+    </header>
+    <div class="welcome-content">
+        <h2>Welcome to LearnLush!</h2>
+        <p>Your gateway to the ever-evolving realms of data science, AI, machine learning, and advanced technology. Dive into a rich fabric of knowledge where bytes of information weave together to form the fabric of innovation. Embark on a journey where curiosity meets code, and insights blossom. Join our community of enthusiasts, learners, and experts as we unravel the mysteries of the digital universe. Let's explore, discover, and elevate our understanding together at LearnLush.</p>
+        <div class="button-container">
+            <button onclick="location.href='login.html'">Log in</button>
+            <button onclick="location.href='signup.html'">Sign up</button>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 LearnLush. All rights reserved.</p>
+        <p>Contact: (+91) 9347120448, (+91) 9849130314</p>
+        <p>Created by: Renuka and Sindhu Priya</p>
+    </footer>
+</body>
+</html>

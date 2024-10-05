@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #333;
+    color: #fff;
+}
+
+.logo img {
+    width: 100px; /* Adjust the size as needed */
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search input {
+    padding: 8px;
+    margin-right: 10px;
+}
+
+.user-options button {
+    margin-right: 10px;
+    background-color: #fff;
+    color: #333;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.user-icon img {
+    width: 32px; /* Adjust the size as needed */
+    border-radius: 50%;
+}

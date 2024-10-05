@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <style>
+      .food-munch-logo {
+        width: 180px;
+        height: 100px;
+      }
+      #navItem1,
+      #navItem2,
+      #navItem3,
+      #navItem4 {
+        color: #323f4b;
+        font-family: "Roboto";
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .custom-navbar-bg {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            src="Rose Gold Luxury Initial Circle Logo.png"
+            class="food-munch-logo"
+          />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-link active" id="navItem1" href="Signup.html">
+                Sign UP
+              <span class="sr-only">(current)</span>
+            </a>
+            <a class="nav-link" href="Login.html" id="navItem2">Login</a>
+            <a class="nav-link" href="sample.html" id="navItem3">Write</a>
+            <a class="nav-link" href="#" id="navItem4">Like</a>
+            <a class="nav-link" href="logout.html" id="navItem4">Logout</a>
+            <a class="nav-link" href="change_password.html" id="navItem4">Change Password</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f5f5f5;
+                text-align: center;
+                margin: 0;
+                padding: 0;
+            }
+    
+            h1 {
+                color: #333;
+            }
+    
+            .login-form {
+                background-color: #fff;
+                border-radius: 8px;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+                max-width: 300px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+    
+            label {
+                display: block;
+                font-weight: bold;
+                margin-top: 10px;
+            }
+    
+            input[type="email"],
+            input[type="password"] {
+                width: 100%;
+                padding: 10px;
+                margin: 6px 0;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+    
+            input[type="submit"] {
+                background-color: #333;
+                color: #fff;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                font-weight: bold;
+            }
+    
+            input[type="submit"]:hover {
+                background-color: #555;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Login</h1>
+        <div class="login-form">
+            <form action="login.php" method="post">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required><br>
+    
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" required><br>
+    
+                <input type="submit" value="Login">
+                
+            </form>
+        </div>
+    
+  </body>
+</html>
